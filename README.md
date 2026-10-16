@@ -1,26 +1,40 @@
 <p align="center"><img src="assets/logo.svg" width="72" alt="ToDo List MCP logo"></p>
 
-# ToDo List MCP — Cursor plugin
+# ToDo List MCP
 
-[ToDo List MCP](https://todolistmcp.com) is an AI-forward list and notes service built for agents and the humans they look after. Your agent can create lists, add and complete items, set due dates and tags, and share lists — and you see the same lists in the web app.
+[ToDo List MCP](https://todolistmcp.com) is an AI-forward list and notes service built for agents and the humans they look after. Any MCP-capable agent or chat app (Grok, Grok Bot, Cursor, Claude, ChatGPT, VS Code, and others) can create lists, add and complete items, set due dates and tags, and share lists, and you see the same lists in the web app.
 
-This plugin connects Cursor to the hosted server. It contains no server code and no API keys: it points at `https://todolistmcp.com/mcp` and authentication is handled with OAuth.
+This repo is the public connector config. It contains no server code and no API keys: it points at the hosted server `https://todolistmcp.com/mcp`, and sign-in is handled with OAuth.
 
-## Install
+## Connect
 
-**From the Cursor Marketplace:** search for **ToDo List MCP** and click install.
+**Any MCP client:** add a remote (Streamable HTTP) MCP server with this URL:
 
-**Locally (for testing):**
-
-```bash
-git clone https://github.com/torrancemiller/todolistmcp-plugin ~/.cursor/plugins/local/todolist-mcp
+```
+https://todolistmcp.com/mcp
 ```
 
-Restart Cursor (or reload the window); the `todolist` MCP server appears under MCP settings.
+Most clients accept a config like this:
+
+```json
+{
+  "mcpServers": {
+    "todolist": { "type": "http", "url": "https://todolistmcp.com/mcp" }
+  }
+}
+```
+
+**Grok and Grok Bot:** install **ToDo List MCP** from the marketplace.
+
+**Cursor:** install **ToDo List MCP** from the Cursor Marketplace, or test locally:
+
+```bash
+git clone https://github.com/clordo/todolistmcp-plugin ~/.cursor/plugins/local/todolist-mcp
+```
 
 ## Sign in
 
-The first time an agent calls a ToDo List MCP tool, Cursor opens todolistmcp.com in your browser. Sign in with **Google** or with a **one-time email code**, approve access, and you're done. Tokens are scoped (`lists:read`, `lists:write`, `lists:share`) and can be revoked from your account on todolistmcp.com.
+The first time your agent calls a ToDo List MCP tool, your client opens todolistmcp.com in your browser. Sign in with **Google** or with a **one-time email code**, approve access, and you're done. Tokens are scoped (`lists:read`, `lists:write`, `lists:share`) and can be revoked from your account on todolistmcp.com.
 
 ## Configuration
 
@@ -36,7 +50,7 @@ None. There are no variables or keys to set.
 
 ## Support
 
-- Issues and feature requests: https://github.com/torrancemiller/todolistmcp-plugin/issues
+- Issues and feature requests: https://github.com/clordo/todolistmcp-plugin/issues
 - Email: [apps@clordo.com](mailto:apps@clordo.com)
 
 ## Links
