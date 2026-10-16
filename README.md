@@ -37,7 +37,7 @@ None. There are no variables or keys to set.
 ## Support
 
 - Issues and feature requests: https://github.com/torrancemiller/todolistmcp-plugin/issues
-- Email: **TODO: CLORDO LLC support email (pending confirmation)**
+- Email: [apps@clordo.com](mailto:apps@clordo.com)
 
 ## Links
 
