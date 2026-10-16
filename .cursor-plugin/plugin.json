@@ -2,10 +2,10 @@
   "name": "todolist-mcp",
   "displayName": "ToDo List MCP",
   "version": "1.0.0",
-  "description": "AI-forward lists and notes for agents and the humans they look after. Connects Cursor to the hosted ToDo List MCP server at todolistmcp.com (OAuth sign-in, no API keys).",
+  "description": "AI-forward lists and notes for agents and the humans they look after. Connects any MCP agent or chat app to the hosted ToDo List MCP server at todolistmcp.com (OAuth sign-in, no API keys).",
   "author": { "name": "CLORDO LLC" },
   "homepage": "https://todolistmcp.com",
-  "repository": "https://github.com/torrancemiller/todolistmcp-plugin",
+  "repository": "https://github.com/clordo/todolistmcp-plugin",
   "license": "MIT",
   "keywords": ["todo", "tasks", "lists", "notes", "checklist", "productivity", "mcp", "agents"],
   "logo": "assets/logo.svg"
