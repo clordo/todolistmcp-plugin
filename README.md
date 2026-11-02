@@ -32,6 +32,12 @@ Most clients accept a config like this:
 git clone https://github.com/clordo/todolistmcp-plugin ~/.cursor/plugins/local/todolist-mcp
 ```
 
+## Gemini CLI
+
+```bash
+gemini extensions install https://github.com/clordo/todolistmcp-plugin
+```
+
 ## Sign in
 
 The first time your agent calls a ToDo List MCP tool, your client opens todolistmcp.com in your browser. Sign in with **Google** or with a **one-time email code**, approve access, and you're done. Tokens are scoped (`lists:read`, `lists:write`, `lists:share`) and can be revoked from your account on todolistmcp.com.
