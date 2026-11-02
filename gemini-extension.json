@@ -1,0 +1,10 @@
+{
+  "name": "todolist-mcp",
+  "version": "1.0.0",
+  "description": "AI-forward lists and notes for agents and the humans they look after. Connects Gemini CLI to the hosted ToDo List MCP server at todolistmcp.com (OAuth sign-in, no API keys).",
+  "mcpServers": {
+    "todolist": {
+      "httpUrl": "https://todolistmcp.com/mcp"
+    }
+  }
+}
